@@ -1,0 +1,96 @@
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <script src="../skin/vue.global.prod.3.4.27.js"></script>
+    <link rel="stylesheet" href="../skin/style.css">
+    <link rel="stylesheet" href="../skin/style_icon.css">
+    <link rel="stylesheet" href="../skin/index.css">
+    <script src="../skin/nutui.umd.4.3.8.js"></script>
+    <title>福利详情</title>
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <link rel="icon" href="../static/upload/image/20250417/1744888913542556.png" type="image/png">
+        <style>
+        html,
+        body {
+            margin: 0;
+            padding: 0;
+            font-size: 12px;
+            /* 让body占满屏幕高度，为背景提供载体 */
+            height: 100%;
+            overflow-x: hidden; /* 避免横向滚动 */
+        }
+
+        /* 为页面主体容器添加背景图片 */
+        .page {
+            width: 100%;
+            height: 100%;
+            /* 引入背景图片 */
+            background: url("./images/bg.png") center center no-repeat;
+            /* 背景图片自适应容器，保持比例且覆盖全屏 */
+            background-size: cover;
+            /* 确保背景在内容下方，不遮挡元素 */
+            position: relative;
+        }
+
+        .myImg {
+            width: 100%;
+            height: auto;
+            /* 确保海报图片在背景上方显示 */
+            position: relative;
+            z-index: 1;
+        }
+
+        .head-box {
+            width: 100%;
+            height: 12.2666666667vw;
+            background: url("./images/img4.png") center bottom no-repeat;
+            background-size: 100% auto;
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            padding: 0 2.1333333333vw;
+            box-sizing: border-box;
+            /* 确保头部在背景上方，不被覆盖 */
+            position: relative;
+            z-index: 2;
+        }
+
+        .go-back img {
+            width: 30px;
+            height: 30px;
+            /* 保证返回图标可点击且层级正常 */
+            cursor: pointer;
+        }
+
+        .page-cont, .activty-popup {
+            /* 让内容容器自适应页面，不影响背景显示 */
+            width: 100%;
+            position: relative;
+            z-index: 1;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="app" class="page" data-v-app="">
+        <div class="page-cont">
+            <div class="activty-popup">
+                <!-- 头部返回区域 -->
+                <div class="head-box">
+                    <a class="go-back" href="index.html">
+                        <img src="./images/icon16.png" alt="返回首页" />
+                    </a>
+                </div>
+                <!-- 海报图片 -->
+                <img class="myImg" id="myImg" src="./images/fl.png" title="1743435910908670.png" alt="海报.png" />
+            </div>
+        </div>
+    </div>
+
+    <!-- 引入jQuery -->
+    <script src="../skin/jquery-2.1.1.min.js"></script>
+</body>
+</html>
